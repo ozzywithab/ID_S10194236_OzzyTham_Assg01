@@ -1,11 +1,12 @@
 /* Importing font to be used */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 /* Applying font to all elements in body and making the body flush with the browser */
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    background-color: lightgrey;
+    background-color: #ababab;
 }
 
 
@@ -15,7 +16,6 @@ header nav ul{
     margin: 0px;
     margin-right: 0px;
     padding: 25px 0px;
-    /* display: flex; */
     justify-content: space-evenly;
     font-size: 20px;
     padding-bottom:50px;
@@ -78,7 +78,7 @@ header nav ul li:first-child{
 .coolLine1{ 
     height: 10px;
     width: 85px;
-    background-color: lightsalmon;
+    background-color: #ff5252;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -87,7 +87,7 @@ header nav ul li:first-child{
 .coolLine2{
     height: 10px;
     width: 35px;
-    background-color: lightsalmon;
+    background-color: #ff5252;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -96,7 +96,7 @@ header nav ul li:first-child{
 .coolLine3{
     height: 10px;
     width: 65px;
-    background-color: lightsalmon;
+    background-color: #ff5252;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -116,29 +116,68 @@ header nav ul li:first-child{
 
 /* CSS to set how much space on the screen the about flexbox takes on the screen, under the .content flexbox */
 .about{
-    flex: 0 0 60%;
+    flex: 0 0 65%;
 }
 
 /* CSS to set how much space on the screen the about flexbox takes on the screen, under the .content flexbox */
 .skills{
-    flex: 0 0 40%;
+    flex: 0 0 35%;
 }
 
 /* CSS to space the content between the sides of the browser and the other flexbox */
 .about-content{
-    padding-left: 50px;
-    padding-right: 25px;
+    padding-left: 100px;
+    padding-right: 50px;
 
 }
 
 /* CSS to space the content between the sides of the browser and the other flexbox */
 .skills-content{
-    padding-right: 50px;
-    padding-left: 25px;
+    padding-right: 100px;
+    padding-left: 50px;
 
 }
 
 /* Creates a flex to display my contact information  */
-/* .contactFooter{
+.contactFooter{
+    height: 100px;
+    background: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
 
-} */
+/* Makes a flexbox */
+.socials{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 35px;
+}
+
+/* Sets CSS styles for the individual icon at the footer */
+.instagram{
+    background-image: url("images/instagramIcon.png");
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Sets CSS styles for the individual icon at the footer */
+.linkedin{
+    background-image: url("images/linkedinIcon.png");
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
