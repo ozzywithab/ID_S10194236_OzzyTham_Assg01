@@ -1,0 +1,123 @@
+/* Importing font to be used */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/* Applying font to all elements in body and making the body flush with the browser */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: #ababab;
+}
+
+
+/* CSS for navigation bar items */
+header nav ul{
+    list-style: none;
+    margin: 0px;
+    margin-right: 0px;
+    padding: 25px 0px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding-bottom:50px;
+}
+
+/* Pushes navigation bar to the right with a spacing between each element */
+header nav ul li{
+    float: right;
+    padding-left: 50px;
+}
+
+header nav ul li:first-child{
+    padding-right: 50px;
+}
+
+/* CSS for the banner photo under the nav bar */
+.photo-part{
+    margin-top: 0px;
+    background-image: url("images/grouppic.png");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* CSS for the avatar/picture of myself  */
+.my-face{
+    background-image: url("images/myself.jfif");
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    bottom: -110px;
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 5px;
+    border-color: lightgrey;
+    border-style: solid;
+}
+
+/* CSS for my name to be displayed over the banner */
+.myName{
+    position: absolute;
+    text-align: center;
+    left: 0%;
+    right: 0%;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0px 10px #000000;
+}
+
+.content{
+    
+}
+
+/* Creates a flex to display my contact information  */
+.contactFooter{
+    height: 100px;
+    background: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Makes a flexbox */
+.socials{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 35px;
+}
+
+/* Sets CSS styles for the individual icon at the footer */
+.instagram{
+    background-image: url("images/instagramIcon.png");
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Sets CSS styles for the individual icon at the footer */
+.linkedin{
+    background-image: url("images/linkedinIcon.png");
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
