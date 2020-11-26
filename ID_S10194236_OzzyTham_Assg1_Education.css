@@ -75,7 +75,8 @@ header nav ul li:first-child{
 }
 
 .content{
-    
+    display: flex;
+    flex-direction: row;
 }
 
 /* Creates a flex to display my contact information  */
