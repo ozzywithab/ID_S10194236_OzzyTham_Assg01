@@ -1,0 +1,144 @@
+/* Importing font to be used */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Applying font to all elements in body and making the body flush with the browser */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: lightgrey;
+}
+
+
+/* CSS for navigation bar items */
+header nav ul{
+    list-style: none;
+    margin: 0px;
+    margin-right: 0px;
+    padding: 25px 0px;
+    /* display: flex; */
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding-bottom:50px;
+}
+
+/* Pushes navigation bar to the right with a spacing between each element */
+header nav ul li{
+    float: right;
+    padding-left: 50px;
+}
+
+header nav ul li:first-child{
+    padding-right: 50px;
+}
+
+/* CSS for the banner photo under the nav bar */
+.photo-part{
+    margin-top: 0px;
+    background-image: url("images/grouppic.png");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* CSS for the avatar/picture of myself  */
+.my-face{
+    background-image: url("images/myself.jfif");
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    bottom: -110px;
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 5px;
+    border-color: lightgrey;
+    border-style: solid;
+}
+
+/* CSS for my name to be displayed over the banner */
+.myName{
+    position: absolute;
+    text-align: center;
+    left: 0%;
+    right: 0%;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0px 10px #000000;
+}
+
+/* Makes a paragraph into a solid rectangle */
+.coolLine1{ 
+    height: 10px;
+    width: 85px;
+    background-color: lightsalmon;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Makes a paragraph into a solid rectangle */
+.coolLine2{
+    height: 10px;
+    width: 35px;
+    background-color: lightsalmon;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Makes a paragraph into a solid rectangle */
+.coolLine3{
+    height: 10px;
+    width: 65px;
+    background-color: lightsalmon;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* CSS for the div that contains all my content */
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+/* CSS to space the content items away from the banner */
+.content div{
+    margin-top: 100px;
+}
+
+/* CSS to set how much space on the screen the about flexbox takes on the screen, under the .content flexbox */
+.about{
+    flex: 0 0 60%;
+}
+
+/* CSS to set how much space on the screen the about flexbox takes on the screen, under the .content flexbox */
+.skills{
+    flex: 0 0 40%;
+}
+
+/* CSS to space the content between the sides of the browser and the other flexbox */
+.about-content{
+    padding-left: 50px;
+    padding-right: 25px;
+
+}
+
+/* CSS to space the content between the sides of the browser and the other flexbox */
+.skills-content{
+    padding-right: 50px;
+    padding-left: 25px;
+
+}
+
+/* Creates a flex to display my contact information  */
+/* .contactFooter{
+
+} */
