@@ -8,4 +8,29 @@ When designing my portfolio, I looked at other people's portfolio and made a des
 
 ## Features
 
+*Navigation bar - On every page and allows user to navigate between the 3 HTML sites without a link
+
 *Feedback form - Users can send me feedback through the last page of the website by filing up a form
+
+#### index.html
+
+The index page is also my About me page and includes information about myself and some of my skills
+
+#### Education.html
+
+The education page displays my previous schools and past academic achievements in the respective schools that I attended
+
+#### Contact.html
+
+The contact page includes my contact information and a form
+
+## Technology used
+
+*@media() - Used to change certain CSS styles so elements of the HTML page would adapt to a smaller browser
+
+## Media
+
+*All photos used were personal
+
+
+
