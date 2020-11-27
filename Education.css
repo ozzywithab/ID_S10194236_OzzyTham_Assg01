@@ -80,6 +80,19 @@ header nav ul li:first-child{
     flex-wrap: wrap;
     margin-top: 200px;
     margin-bottom: 100px;
+    justify-content: space-around;
+}
+
+.school-content{
+    width: 40%;
+    margin-bottom: 150px;
+}
+.school-content h2{
+    text-align: center;
+}
+.school-content img{
+    display: block;
+    margin: auto;
 }
 
 .primarySchool{
@@ -101,19 +114,19 @@ header nav ul li:first-child{
 .primaryContent{
     padding-left: 100px;
     padding-right: 50px;
-    height: 220px;
+    height: 400px;
 }
 
 .secondaryContent{
     padding-left: 50px;
     padding-right: 100px;
-    height: 220px;
+    height: 400px;
 }
 
 .polyContent{
     padding-left: 100px;
     padding-right: 50px;
-    height: 220px;
+    height: 400px;
 }
 
 img{
