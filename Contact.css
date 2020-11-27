@@ -27,6 +27,7 @@ header nav ul li{
     color: black;
     background-color: #94d1be;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 /* Makes navigation bar items not have underline and inherits black colour */
@@ -131,6 +132,14 @@ form label {
     text-align: left;
     width: 300px;
     height: 120px;
+}
+
+.submitButton{
+    display: block;
+    margin: auto;
+    letter-spacing: 1px;
+    width: 130px;
+    height: 30px;
 }
 
 /* Creates a flex to display my contact information  */
