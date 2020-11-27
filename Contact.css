@@ -74,68 +74,47 @@ header nav ul li:first-child{
     text-shadow: 1px 0px 10px #000000;
 }
 
-/* Makes a paragraph into a solid rectangle */
-.coolLine1{ 
-    height: 10px;
-    width: 85px;
-    background-color: #ff5252;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-/* Makes a paragraph into a solid rectangle */
-.coolLine2{
-    height: 10px;
-    width: 35px;
-    background-color: #ff5252;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-/* Makes a paragraph into a solid rectangle */
-.coolLine3{
-    height: 10px;
-    width: 65px;
-    background-color: #ff5252;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-/* CSS for the div that contains all my content */
 .content{
     display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* CSS to space the content items away from the banner */
-.content div{
-    margin-top: 100px;
+.contactInformation{
+    flex-basis: 50%;
+    width: 500px;
 }
 
-/* CSS to set how much space on the screen the about flexbox takes on the screen, under the .content flexbox */
-.about{
-    flex: 0 0 65%;
+form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    width: 500px;
 }
 
-/* CSS to set how much space on the screen the about flexbox takes on the screen, under the .content flexbox */
-.skills{
-    flex: 0 0 35%;
+form label {
+    padding: 10px;
 }
 
-/* CSS to space the content between the sides of the browser and the other flexbox */
-.about-content{
-    padding-left: 100px;
-    padding-right: 50px;
-
+.nameInput{
+    margin-left: 27px;
+    width: 300px;
 }
 
-/* CSS to space the content between the sides of the browser and the other flexbox */
-.skills-content{
-    padding-right: 100px;
-    padding-left: 50px;
+.emailInput{
+    margin-left: 31px;
+    width: 300px;
+}
 
+.messageInput{
+    margin-left: 6px;
+    text-align: left;
+    width: 300px;
+    height: 120px;
 }
 
 /* Creates a flex to display my contact information  */

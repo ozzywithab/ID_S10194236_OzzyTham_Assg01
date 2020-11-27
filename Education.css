@@ -6,7 +6,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    background-color: #ababab;
+    background-color: #DAF0EE;
 }
 
 
@@ -56,7 +56,7 @@ header nav ul li:first-child{
     margin-left: auto; 
     margin-right: auto; 
     border: 5px;
-    border-color: lightgrey;
+    border-color: #DAF0EE;
     border-style: solid;
 }
 
@@ -70,7 +70,7 @@ header nav ul li:first-child{
     margin-left: auto;
     margin-right: auto;
     font-size: 40px;
-    color: white;
+    color: #DAF0EE;
     text-shadow: 1px 0px 10px #000000;
 }
 
@@ -78,16 +78,16 @@ header nav ul li:first-child{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .primarySchool{
     flex-basis: 50%;
-    margin-top: 120px;
 }
 
 .secondarySchool{
     flex-basis: 50%;
-    margin-top: 120px;
 }
 
 .polytechnic{
@@ -99,38 +99,70 @@ header nav ul li:first-child{
 }
 
 .primaryContent{
-    margin-left: 100px;
-    margin-right: 50px;
-    height: 300px;
-    background-color: lightblue;
-    border-radius: 10px;
-    padding: 10px;
+    padding-left: 100px;
+    padding-right: 50px;
+    height: 220px;
 }
 
 .secondaryContent{
-    padding-left: 100px;
-    padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 100px;
+    height: 220px;
 }
 
 .polyContent{
     padding-left: 100px;
     padding-right: 50px;
+    height: 220px;
+}
+
+img{
+    width: 130px;
+    height: 130px;
 }
 
 .workContent{
-    padding-left: 100px;
-    padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 100px;
+    height: 220px;
 }
 
-.personalContent{
-    padding-left: 100px;
-    padding-right: 50px;
+.primaryLogo{
+    background-image: url("images/primaryLogo.png");
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    width: 130px;
+}
+
+.secondaryLogo{
+    background-image: url("images/secondaryLogo.png");
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    width: 130px;
+}
+
+.polyLogo{
+    background-image: url("images/polyLogo.png");
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    width: 130px;
+}
+
+.workLogo{
+    background-image: url("images/workLogo.png");
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    width: 130px;
 }
 
 /* Creates a flex to display my contact information  */
 .contactFooter{
     height: 100px;
-    background: #666666;
+    background: #9DB5B2;
     display: flex;
     flex-direction: column;
     justify-content: center;
