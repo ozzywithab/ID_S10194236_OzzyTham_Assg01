@@ -14,21 +14,33 @@ body{
 header nav ul{
     list-style: none;
     margin: 0px;
-    margin-right: 0px;
     padding: 25px 0px;
     justify-content: space-evenly;
     font-size: 20px;
-    padding-bottom:50px;
 }
 
 /* Pushes navigation bar to the right with a spacing between each element */
 header nav ul li{
-    float: right;
-    padding-left: 50px;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 20px;
+    color: black;
+    background-color: #94d1be;
+    border-radius: 10px;
 }
 
-header nav ul li:first-child{
-    padding-right: 50px;
+
+/* Makes navigation bar items not have underline and inherits black colour */
+header nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Changes how navigation bar items look if user hovers over it */
+header nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 /* CSS for the banner photo under the nav bar */
@@ -180,4 +192,56 @@ header nav ul li:first-child{
     background-position: center;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+@media only screen and (max-width:600px){
+    /* Turns nav bar into flex display and displays it to middle instead of right */
+    header nav ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        padding-bottom:0px;
+        font-weight: bolder;
+        height: 40px;
+    }
+
+    /* Pushes navigation bar to the right with a spacing between each element */
+    header nav ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+    /* Makes the class take up more of the screen so text won't be too cramped in a smaller screen */
+    .about{
+        flex: 0 0 90%;
+    }
+
+    /* Makes the class take up more of the screen so text won't be too cramped in a smaller screen */
+    .skills{
+        flex: 0 0 90%;
+    }
+
+    /* CSS to space the content between the sides of the browser and the other flexbox */
+    .about-content{
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    /* CSS to space the content between the sides of the browser and the other flexbox */
+    .skills-content{
+       padding-right: 50px;
+       padding-left: 50px;
+    }
+}
+
+/* Pushes my name up because it gets too close to avatar at 450px */
+@media only screen and (max-width: 450px){
+    .myName{
+        top: 90px;
+    }
 }

@@ -14,21 +14,32 @@ body{
 header nav ul{
     list-style: none;
     margin: 0px;
-    margin-right: 0px;
     padding: 25px 0px;
     justify-content: space-evenly;
     font-size: 20px;
-    padding-bottom:50px;
 }
 
 /* Pushes navigation bar to the right with a spacing between each element */
 header nav ul li{
-    float: right;
-    padding-left: 50px;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 20px;
+    color: black;
+    background-color: #94d1be;
+    border-radius: 10px;
 }
 
-header nav ul li:first-child{
-    padding-right: 50px;
+/* Makes navigation bar items not have underline and inherits black colour */
+header nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Changes how navigation bar items look if user hovers over it */
+header nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 /* CSS for the banner photo under the nav bar */
@@ -74,6 +85,7 @@ header nav ul li:first-child{
     text-shadow: 1px 0px 10px #000000;
 }
 
+/* Creates flexbox for content and centers all content in flexbox */
 .content{
     display: flex;
     flex-direction: column;
@@ -84,32 +96,36 @@ header nav ul li:first-child{
     align-items: center;
 }
 
+/* Sets max. width for the contactInformation flexbox/class */
 .contactInformation{
-    flex-basis: 50%;
     width: 500px;
 }
 
+/* Sets max. width for the contactInformation flexbox/class, displays questions in a column */
 form{
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
     width: 500px;
 }
 
+/* Spaces form elements 10px from each other/other elements */
 form label {
     padding: 10px;
 }
 
+/* Spaces the textbox away from the label and sets the size of textbox */
 .nameInput{
     margin-left: 27px;
     width: 300px;
 }
 
+/* Spaces the textbox away from the label and sets the size of textbox */
 .emailInput{
     margin-left: 31px;
     width: 300px;
 }
 
+/* Spaces the textbox away from the label and sets the size of textbox */
 .messageInput{
     margin-left: 6px;
     text-align: left;
@@ -159,4 +175,63 @@ form label {
     background-position: center;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+@media only screen and (max-width:600px){
+    /* Turns nav bar into flex display and displays it to middle instead of right */
+    header nav ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        padding-bottom:0px;
+        font-weight: bolder;
+        height: 40px;
+    }
+
+    /* Pushes navigation bar to the right with a spacing between each element */
+    header nav ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+    .contactInformation{
+        width: 400px;
+    }
+
+    form{
+        width: 400px;
+    }
+
+    /* Spaces the textbox away from the label and sets the size of textbox */
+    .nameInput{
+        margin-left: 1px;
+        width: 300px;
+    }
+
+    /* Spaces the textbox away from the label and sets the size of textbox */
+    .emailInput{
+        margin-left: 2px;
+        width: 300px;
+    }
+
+    /* Spaces the textbox away from the label and sets the size of textbox */
+    .messageInput{
+        margin-left: 0px;
+        width: 277px;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
+/* Pushes my name up because it gets too close to avatar at 450px */
+@media only screen and (max-width: 450px){
+    .myName{
+        top: 90px;
+    }
 }
