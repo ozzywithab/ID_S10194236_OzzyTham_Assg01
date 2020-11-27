@@ -77,6 +77,54 @@ header nav ul li:first-child{
 .content{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.primarySchool{
+    flex-basis: 50%;
+    margin-top: 120px;
+}
+
+.secondarySchool{
+    flex-basis: 50%;
+    margin-top: 120px;
+}
+
+.polytechnic{
+    flex-basis: 50%;
+}
+
+.workExperience{
+    flex-basis: 50%;
+}
+
+.primaryContent{
+    margin-left: 100px;
+    margin-right: 50px;
+    height: 300px;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.secondaryContent{
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.polyContent{
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.workContent{
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.personalContent{
+    padding-left: 100px;
+    padding-right: 50px;
 }
 
 /* Creates a flex to display my contact information  */
